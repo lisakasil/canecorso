@@ -8,19 +8,18 @@
     content="Learn about the Cane Corso: history, temperament, care, training tips, and a beautiful photo gallery."
   />
   <title>Cane Corso – Powerful, Loyal, and Intelligent</title>
+
+  <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Header / Nav -->
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="#top" aria-label="Cane Corso Home">Cane Corso</a>
+      <a class="brand" href="#top">Cane Corso</a>
       <nav aria-label="Primary">
         <ul class="nav-list">
           <li><a href="#about">About</a></li>
@@ -47,14 +46,15 @@
           <a class="btn primary" href="#about">Learn More</a>
         </div>
 
-        <!-- Centered hero image -->
+        <!-- Centered hero image from local images/KotaBota/ folder -->
         <figure class="hero-image">
           <img
-            src="https://images.unsplash.com/photo-1601758064135-8a5a6a8f1d1d?q=80&w=1600&auto=format&fit=crop"
-            alt="A majestic Cane Corso sitting outside"
-            width="1200"
-            height="900"
+            src="images/KotaBota.jfif"
+            alt="Cane Corso standing alert and poised"
+            width="800"
+            height="533"
             loading="eager"
+            decoding="async"
           />
           <figcaption>Confident. Loyal. Intelligent.</figcaption>
         </figure>
@@ -86,7 +86,7 @@
             <li>Excellent guardian with a calm, watchful presence.</li>
             <li>Thrives with confident, consistent leadership.</li>
             <li>Benefits from purposeful work and daily training.</li>
-            <li>Low-moderate shedding; low grooming needs.</li>
+            <li>Low–moderate shedding; low grooming needs.</li>
           </ul>
         </div>
       </div>
@@ -152,27 +152,11 @@
         <h2>Photo Gallery</h2>
         <p class="muted">Click any photo to enlarge.</p>
         <div class="gallery">
-          <!-- Use royalty-free images; replace URLs if preferred -->
-          <img
-            src="https://images.unsplash.com/photo-1601758064135-8a5a6a8f1d1d?q=80&w=700&auto=format&fit=crop"
-            alt="Cane Corso portrait looking alert"
-            class="gallery-item"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1558944351-c6adf5d4a8cc?q=80&w=700&auto=format&fit=crop"
-            alt="Cane Corso laying on grass"
-            class="gallery-item"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=700&auto=format&fit=crop"
-            alt="Cane Corso puppy outdoors"
-            class="gallery-item"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?q=80&w=700&auto=format&fit=crop"
-            alt="Cane Corso in a field"
-            class="gallery-item"
-          />
+          <!-- Replace with your own local images if you prefer; ensure class="gallery-item" -->
+          <img class="gallery-item" src="images/KotaBota/mydog.jfif" alt="Cane Corso portrait" />
+          <img class="gallery-item" src="images/KotaBota/mydog.jfif" alt="Cane Corso at rest" />
+          <img class="gallery-item" src="images/KotaBota/mydog.jfif" alt="Cane Corso looking alert" />
+          <img class="gallery-item" src="images/KotaBota/mydog.jfif" alt="Cane Corso close-up" />
         </div>
       </div>
     </section>
@@ -224,7 +208,7 @@
         © <span id="year"></span> Cane Corso Guide. All rights reserved.
       </p>
       <p class="muted">
-        Photos via Unsplash. This is an educational static site demo.
+        Photos provided locally from your project’s <code>images/KotaBota/</code> folder.
       </p>
     </div>
   </footer>
@@ -236,6 +220,8 @@
     <p id="lightboxCaption" class="lightbox-caption"></p>
   </div>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
+``
